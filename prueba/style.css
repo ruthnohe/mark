@@ -7,7 +7,6 @@
     width:100%;
     position:fixed;
     background-color: rgba(153, 156, 160, 0.115);
-
 }
 ul {
     width: auto;
@@ -184,12 +183,107 @@ li:hover a{
         font-size: 30px;
         font-style: italic;
     }
-    .cintillo{
-    height: 50rem;
+    .box-four{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     position: relative;
     width: 100%;
-    background-position: center;
-    background-image: url('../img/compromiso.jpg');
-    background-size: 80rem;
-    background-repeat: no-repeat;
-     }
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0px 7px 10px 5px rgba(108, 108, 136, 0.295);
+       }
+    .box-four .cintillo{
+        position: relative;
+        height: 20rem;
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 8rem;
+    }
+    .box-four .cintillo img{
+        height: 100%;
+        width: 100%;
+        transition: all 500ms ease-in-out;
+
+    }
+    .box-four .cintillo .capa{
+       position: absolute;
+       top: 0;
+       height: 100%;
+        width: 100%;
+        opacity: 0;
+       visibility: hidden;
+       background-color: rgba(188, 188, 202, 0.61);
+       transition: all 500ms ease-in-out;
+       text-align: center;
+   }
+   .box-four .cintillo:hover > .capa{
+       opacity: 1;
+       visibility: visible;
+   }
+   .box-four .cintillo:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.box-four .cintillo .capa h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 180px;
+    margin-top: 30px;
+    transition: all 500ms ease-in-out;
+}
+.box-four .cintillo .capa p{
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    margin: auto;
+}
+/*-------------------------SECTION FIVE--------------------------*/
+.box-five{
+        border: transparent solid;
+        display: grid;
+        background-color:white;
+        justify-content: center;
+        margin-top: 5rem;
+
+}
+.tcards {
+    display: flex;
+    width: 70rem;
+    height: 25rem;
+    margin: 20px;
+    border: 0.5px rgba(88, 88, 88, 0.3) solid;
+    border-radius: 10px;
+    border-bottom:transparent;
+    border-top:transparent;
+
+}
+    [class*="tcard-"] {
+    width: 34%;
+    text-align: center;
+    padding-top: 5em;
+}
+.tcard-two {
+    border: 0.5px rgba(88, 88, 88, 0.3) solid;
+    border-top:transparent;
+    border-bottom:transparent;
+    border-radius: 10px;
+    }
+    [class*="2card-"] p{
+    margin: 20px;
+    text-align:justify;
+    }
+
+    .fas, .fab {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    }
+
+    .tcards h3{
+        font-size: 30px;
+        font-style: italic;
+    }
